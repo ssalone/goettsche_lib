@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////
-version = "version goettsche.lib 0.93 Nov_2017 ";      //$Id:$
+version = "version goettsche.lib 0.931 Feb_2018 ";      //$Id:$
 info="
 LIBRARY:  goettsche.lib     Drezet's formula for the Betti numbers of the moduli space
                             of Kronecker modules;
@@ -32,8 +32,10 @@ PROCEDURES:
   PPolyH(z, n, b);          Poincare Polynomial of the Hilbert scheme of n points on a surface
   BettiNumsH(n, b);         Betti numbers of the Hilbert scheme of n points on a surface
   NakYoshF(z, t, r, n);     The Nakajima-Yoshioka formula up to n-th degree
-  PPolyQp(z, n, b);         Poincare Polynomial of the Quot-scheme of rank r on n planar points
-  BettiNumsQp(n, b);        Betti numbers of the Quot-scheme of rank r on n planar points
+  PPolyQp(z, n, b);         Poincare Polynomial of the punctual Quot-scheme
+                            of rank r on n planar points
+  BettiNumsQp(n, b);        Betti numbers of the punctual Quot-scheme
+                            of rank r on n planar points
   MacdonaldF(z, t, n, b);   The Macdonald's formula up to n-th degree
   PPolyS(z, n, b);          Poincare Polynomial of the n-th symmetric power of a variety
   BettiNumsS(n, b);         Betti numbers of the n-th symmetric power of a variety
@@ -353,8 +355,8 @@ example
 proc BettiNumsQp(int r, int n)
 "USAGE:   BettiNumsQp(r, n);  n, r integers
 RETURN:   list of non-negative integers
-PURPOSE:  computes the Betti numbers of the Quot-scheme of rank r
-          on n points on a plane
+PURPOSE:  computes the Betti numbers of the punctual Quot-scheme
+          of rank r on n points on a plane
 EXAMPLE:  example BettiNumsQp; shows an example
 NOTE:     an empty list is returned if n<0 or r<=0
 "
