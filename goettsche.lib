@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////
-version = "version goettsche.lib 0.931 Feb_2018 ";      //$Id:$
+version = "version goettsche.lib 0.9311 Feb_2018 ";      //$Id:$
 info="
 LIBRARY:  goettsche.lib     Drezet's formula for the Betti numbers of the moduli space
                             of Kronecker modules;
@@ -25,7 +25,7 @@ REFERENCES:
                             58, 563-568, (1962).
 
   [4] Nakajima, Hiraku;     Lectures on instanton counting, CRM Proceedings and Lecture Notes,
-      Yoshioka, Kota        Volume 88, 31-101, (2004).
+      Yoshioka, Kota        Volume 38, 31-101, (2004).
 
 PROCEDURES:
   GoettscheF(z, t, n, b);   The Goettsche's formula up to n-th degree
